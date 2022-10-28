@@ -6,15 +6,9 @@
 	  {
 		"label": "Invoke Build and Run script",
 		"type": "shell",
-		"command": "&",
+		"command": "${workspaceFolder}//Build and Run (Simulator).sh",
 		"args": [
-			"${workspaceFolder}\\Build and Run (Simulator).ps1",
-			"-build",
-			"'${workspaceFolder}\\builds'",
-			"-source",
-			"'${workspaceFolder}\\source'",
-			"-name",
-			"'${workspaceFolderBasename}'"
+			"true"
 		],
 		"presentation": {
 		  "showReuseMessage": false,
@@ -25,16 +19,9 @@
 	  {
 		"label": "Invoke Run script",
 		"type": "shell",
-		"command": "&",
+		"command": "${workspaceFolder}//Build and Run (Simulator).sh",
 		"args": [
-			"${workspaceFolder}\\Build and Run (Simulator).ps1",
-			"-build",
-			"'${workspaceFolder}\\builds'",
-			"-source",
-			"'${workspaceFolder}\\source'",
-			"-name",
-			"'${workspaceFolderBasename}'",
-			"-dontbuild"
+			""
 		],
 		"presentation": {
 		  "showReuseMessage": false,
